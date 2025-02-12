@@ -26,7 +26,7 @@ const Hero = () => {
             </p>
          <div className='mt-8'>
             <a 
-                href="/resume_prakaikan_rittitis.pdf"
+                href="/portfolio/resume_prakaikan_rittitis.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className='bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full transform transition-transform duration-300 hover:scale-105'>Resume</a>
