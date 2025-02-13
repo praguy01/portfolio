@@ -8,7 +8,7 @@ const experience =[
     id:1,
     name:'Frontend Developer',
     description: 'Designed a Swimlane Activity Diagram and developed the frontend of the Payor Office website. Implemented additional functionalities, including search, edit, update, and autocomplete.',
-    technologies:['Java','HTML','CSS','SSMS'],
+    technologies:['Java','JavaScript','HTML','CSS','SSMS'],
     image:work
   }
 ]
