@@ -9,13 +9,16 @@ import pet2 from '../assets/pet2.png';
 import s2 from '../assets/s2.png';
 import s3 from '../assets/s3.png';
 import s4 from '../assets/s4.png';
+import bot from '../assets/bot.png';
+import form1 from '../assets/form1.jpg';
+
 
 const projects = [
   {
     id: 1,
     name: "Digital platforms for safety unit v.2 and Line OA",
     description: "This project focuses on developing a web system for workplace safety officers, integrating AI and Line OA to enhance report sharing and notifications, replacing traditional web-based submissions.<br><br>- AI Integration: Utilized the Gemini API for document analysis, assisting in generating and analyzing monthly reports.<br>- Line OA Implementation: Designed to function similarly to the web system, ensuring ease of use and improved accessibility for users. <br><br>This integration enhances efficiency in safety reporting, making it more accessible and streamlined for workplace safety officers.",
-    images: [bot9, bot7]
+    images: [bot9, bot7, form1, bot]
   }
   ,
   {
@@ -56,7 +59,7 @@ const ProjectDetail1 = () => {
           <h2 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 text-center'>
             {project.name}
           </h2>
-          <p className='text-gray-400 text-center md:text-left' dangerouslySetInnerHTML={{ __html: project.description }}></p>
+          <p className='text-gray-300 text-center md:text-left' dangerouslySetInnerHTML={{ __html: project.description }}></p>
           <div className="flex flex-wrap justify-center gap-4">
             {project.images.map((image, index) => (
               <img key={index} src={image} alt={`${project.name} - ${index + 1}`} 

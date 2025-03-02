@@ -25,7 +25,7 @@ const Experiencedetail = () => {
           <h2 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 text-center'>
             {project.name}
           </h2>
-          <p className='text-gray-400 text-center md:text-left'>{project.description}</p>
+          <p className='text-gray-300 text-center md:text-left'>{project.description}</p>
           <div className="flex flex-wrap justify-center gap-4">
             {project.images.map((image, index) => (
               <img key={index} src={image} alt={`${project.name} - ${index + 1}`} 
