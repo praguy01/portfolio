@@ -12,15 +12,24 @@ import s4 from '../assets/s4.png';
 import bot from '../assets/bot.png';
 import form1 from '../assets/form1.jpg';
 
-
 const projects = [
   {
     id: 1,
     name: "Digital platforms for safety unit v.2 and Line OA",
-    description: "This project focuses on developing a web system for workplace safety officers, integrating AI and Line OA to enhance report sharing and notifications, replacing traditional web-based submissions.<br><br>- AI Integration: Utilized the Gemini API for document analysis, assisting in generating and analyzing monthly reports.<br>- Line OA Implementation: Designed to function similarly to the web system, ensuring ease of use and improved accessibility for users. <br><br>This integration enhances efficiency in safety reporting, making it more accessible and streamlined for workplace safety officers.",
-    images: [bot9, bot7, form1, bot]
-  }
-  ,
+    description: "This project focuses on developing a web system for workplace safety officers, integrating AI and Line OA to enhance report sharing and notifications, replacing traditional web-based submissions.",
+    details: [
+      {
+        title: "Website",
+        description: "AI Integration : Utilized the Gemini API for document analysis, assisting in generating and analyzing monthly reports.",
+        images: [bot9, form1]
+      },
+      {
+        title: "Line OA",
+        description: "Designed to function similarly to the web system, with a notification feature to alert employees in case of accidents. Additionally, a rich menu has been implemented to enhance usability and accessibility.",
+        images: [bot7, bot]
+      }
+    ]
+  },
   {
     id: 2,
     name: 'Search system for tutoring resources',
@@ -59,14 +68,31 @@ const ProjectDetail1 = () => {
           <h2 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 text-center'>
             {project.name}
           </h2>
-          <p className='text-gray-300 text-center md:text-left' dangerouslySetInnerHTML={{ __html: project.description }}></p>
-          <div className="flex flex-wrap justify-center gap-4">
-            {project.images.map((image, index) => (
-              <img key={index} src={image} alt={`${project.name} - ${index + 1}`} 
-                className='w-full md:w-[600px] lg:w-[800px] rounded-lg shadow-lg' />
-            ))}
-          </div>
-          <Link to="/" className='mt-4 inline-block text-pink-400 hover:text-blue-500 self-center'>
+          <p className='text-gray-300 text-lg mt-2'>{project.description}</p>
+          
+          {project.details ? (
+            project.details.map((detail, index) => (
+              <div key={index} className='space-y-4'>
+                <h3 className='text-xl font-semibold text-pink-400 hover:underline'>{detail.title}</h3>
+                <p className='text-gray-300'>{detail.description}</p>
+                <div className='space-y-8 pl-6'>
+                  {detail.images.map((image, imgIndex) => (
+                    <img key={imgIndex} src={image} alt={`${detail.title} - ${imgIndex + 1}`} 
+                      className='w-full rounded-lg shadow-lg transition-transform hover:scale-105' />
+                  ))}
+                </div>
+              </div>
+            ))
+          ) : (
+            <div className='flex flex-wrap justify-center gap-4 mt-4'>
+              {project.images.map((image, index) => (
+                <img key={index} src={image} alt={`${project.name} - ${index + 1}`} 
+                  className='w-full rounded-lg shadow-lg transition-transform hover:scale-105' />
+              ))}
+            </div>
+          )}
+          
+          <Link to="/" className='inline-block text-pink-400 hover:text-blue-500 text-lg font-medium transition-colors'>
             ← Back to Home
           </Link>
         </div>

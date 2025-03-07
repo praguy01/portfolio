@@ -25,11 +25,11 @@ const Navbar = () => {
         </button>
 
         <div className="hidden md:flex space-x-6">
-        <Link to="home" smooth={true} duration={500} className="hover:text-pink-400 cursor-pointer">Home</Link>
-          <Link to="about" smooth={true} duration={500} className="hover:text-pink-400 cursor-pointer">About</Link>
-          <Link to="project" smooth={true} duration={500} className="hover:text-pink-400 cursor-pointer">Project</Link>
-          <Link to="experience" smooth={true} duration={500} className="hover:text-pink-400 cursor-pointer">Experience</Link>
-          <Link to="contact" smooth={true} duration={500} className="hover:text-pink-400 cursor-pointer">Contact</Link>
+        <Link to="home" smooth={true} duration={500} className="relative group hover:text-pink-400 cursor-pointer">Home<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-400 transition-all duration-300 group-hover:w-full"></span></Link>
+          <Link to="about" smooth={true} duration={500} className="relative group hover:text-pink-400 cursor-pointer">About<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-400 transition-all duration-300 group-hover:w-full"></span></Link>
+          <Link to="project" smooth={true} duration={500} className="relative group hover:text-pink-400 cursor-pointer">Project<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-400 transition-all duration-300 group-hover:w-full"></span></Link>
+          <Link to="experience" smooth={true} duration={500} className="relative group hover:text-pink-400 cursor-pointer">Experience<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-400 transition-all duration-300 group-hover:w-full"></span></Link>
+          <Link to="contact" smooth={true} duration={500} className="relative group hover:text-pink-400 cursor-pointer">Contact<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-400 transition-all duration-300 group-hover:w-full"></span></Link>
         </div>
       </div>
 
@@ -41,11 +41,11 @@ const Navbar = () => {
           >
             <X size={32} />
           </button>
-          <Link to="home" smooth={true} duration={500} className="text-xl hover:text-pink-400" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="about" smooth={true} duration={500} className="text-xl hover:text-pink-400" onClick={() => setIsOpen(false)}>About</Link>
-          <Link to="project" smooth={true} duration={500} className="text-xl hover:text-pink-400" onClick={() => setIsOpen(false)}>Project</Link>
-          <Link to="experience" smooth={true} duration={500} className="text-xl hover:text-pink-400" onClick={() => setIsOpen(false)}>Experience</Link>
-          <Link to="contact" smooth={true} duration={500} className="text-xl hover:text-pink-400" onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link to="home" smooth={true} duration={500} className="relative group text-xl hover:text-pink-400 cursor-pointer" onClick={() => setIsOpen(false)}>Home<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-400 transition-all duration-300 group-hover:w-full"></span></Link>
+          <Link to="about" smooth={true} duration={500} className="relative group text-xl hover:text-pink-400 cursor-pointer" onClick={() => setIsOpen(false)}>About<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-400 transition-all duration-300 group-hover:w-full"></span></Link>
+          <Link to="project" smooth={true} duration={500} className="relative group text-xl hover:text-pink-400 cursor-pointer" onClick={() => setIsOpen(false)}>Project<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-400 transition-all duration-300 group-hover:w-full"></span></Link>
+          <Link to="experience" smooth={true} duration={500} className="relative group text-xl hover:text-pink-400 cursor-pointer" onClick={() => setIsOpen(false)}>Experience<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-400 transition-all duration-300 group-hover:w-full"></span></Link>
+          <Link to="contact" smooth={true} duration={500} className="relative group text-xl hover:text-pink-400 cursor-pointer" onClick={() => setIsOpen(false)}>Contact<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-400 transition-all duration-300 group-hover:w-full"></span></Link>
         </div>
       )}
     </nav>
