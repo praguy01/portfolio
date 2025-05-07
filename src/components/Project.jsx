@@ -4,6 +4,9 @@ import bot from '../assets/bot5.jpg'
 import car from '../assets/car.jpg'
 import pet from '../assets/pet.jpg'
 import tutoring from '../assets/s1.png'
+import book2 from '../assets/Screenshot 2025-05-07 151255.png';
+import map from '../assets/Screenshot 2025-05-07 152745.png';
+
 
 const project =[
   {
@@ -33,7 +36,20 @@ const project =[
     description: 'Using NodeMCU ESP8266 with Infrared Module to Build an Automatic Pet Feeder with Scheduled Feeding and Real-Time Monitoring via NETPIE and MQTTBox.',
     technologies:['Arduino','MQTT','NETPIE','IOT',],
     image:pet
-  }
+  },
+    {
+      id: 5,
+      name: 'Book shop',
+      description: 'Develop a mini-project to display a book list with cover image, title, author, price, and category.',
+      technologies: ['Vue.js', 'Tailwind', 'Node.js'],
+      image:book2
+    },{
+      id: 6,
+      name: 'Map hotspots using satellite data.',
+      description: 'Develop a mini-project to display hotspots by pulling data from an API and displaying it on a map.',
+      technologies: ['React', 'Tailwind','MapLibre '],
+      image:map
+    }
 ]
 
 const Project = () => {

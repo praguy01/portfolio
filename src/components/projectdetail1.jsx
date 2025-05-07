@@ -11,6 +11,12 @@ import s3 from '../assets/s3.png';
 import s4 from '../assets/s4.png';
 import bot from '../assets/bot.png';
 import form1 from '../assets/form1.jpg';
+import book1 from '../assets/Screenshot 2025-05-07 151223.png';
+import book2 from '../assets/Screenshot 2025-05-07 151255.png';
+import map from '../assets/Screenshot 2025-05-07 152745.png';
+import map2 from '../assets/Screenshot 2025-05-07 153748.png';
+
+
 
 const projects = [
   {
@@ -50,7 +56,21 @@ const projects = [
     description: 'Using NodeMCU ESP8266 with Infrared Module to Build an Automatic Pet Feeder with Scheduled Feeding and Real-Time Monitoring via NETPIE and MQTTBox.',
     technologies: ['Arduino', 'MQTT', 'NETPIE', 'IOT'],
     images: [netpie, pet2, pet1]
-  }
+  },
+  {
+    id: 5,
+    name: 'Book shop',
+    description: 'Develop a mini-project to display a book list with cover image, title, author, price, and category.',
+    technologies: ['vue.js', 'tailwind', 'node.js'],
+    images: [book2,book1]
+  },
+  {
+        id: 6,
+        name: 'Map hotspots using satellite data.',
+        description: 'Develop a mini-project to display hotspots by pulling data from an API and displaying it on a map.',
+        technologies: ['React', 'Tailwind','MapLibre '],
+        images:[map,map2]
+      }
 ];
 
 const ProjectDetail1 = () => {
