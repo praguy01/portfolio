@@ -15,6 +15,8 @@ import book1 from '../assets/Screenshot 2025-05-07 151223.png';
 import book2 from '../assets/Screenshot 2025-05-07 151255.png';
 import map from '../assets/Screenshot 2025-05-07 152745.png';
 import map2 from '../assets/Screenshot 2025-05-07 153748.png';
+import db from '../assets/db.png';
+import airflow from '../assets/airflow.png';
 
 
 
@@ -70,7 +72,14 @@ const projects = [
         description: 'Develop a mini-project to display hotspots by pulling data from an API and displaying it on a map.',
         technologies: ['React', 'Tailwind','MapLibre '],
         images:[map,map2]
-      }
+      },
+       {
+            id: 7,
+            name: 'Weather ETL Pipeline.',
+            description: 'Implemented a daily ETL pipeline using Apache Airflow to fetch hourly temperature data from the Open-Meteo API, transform and clean the data, and store it in PostgreSQL using ON CONFLICT DO NOTHING to avoid duplication.',
+            technologies: ['Python', 'Airflow','PostgreSQL '],
+            images:[airflow,db]
+          }
 ];
 
 const ProjectDetail1 = () => {

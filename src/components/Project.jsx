@@ -6,6 +6,7 @@ import pet from '../assets/pet.jpg'
 import tutoring from '../assets/s1.png'
 import book2 from '../assets/Screenshot 2025-05-07 151255.png';
 import map from '../assets/Screenshot 2025-05-07 152745.png';
+import airflow from '../assets/airflow.png';
 
 
 const project =[
@@ -49,6 +50,13 @@ const project =[
       description: 'Develop a mini-project to display hotspots by pulling data from an API and displaying it on a map.',
       technologies: ['React', 'Tailwind','MapLibre '],
       image:map
+    },
+    {
+      id: 7,
+      name: 'Weather ETL Pipeline.',
+      description: 'Develop an ETL system to automatically fetch hourly weather forecast data from a public API. Cleaned and processed the data before storing it in a PostgreSQL database. The entire workflow was orchestrated and scheduled using Apache Airflow.',
+      technologies: ['Python', 'Airflow','PostgreSQL '],
+      image:airflow
     }
 ]
 
