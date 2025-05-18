@@ -68,14 +68,14 @@ const projects = [
   },
   {
         id: 6,
-        name: 'Map hotspots using satellite data.',
+        name: 'Map hotspots using satellite data',
         description: 'Develop a mini-project to display hotspots by pulling data from an API and displaying it on a map.',
         technologies: ['React', 'Tailwind','MapLibre '],
         images:[map,map2]
       },
        {
             id: 7,
-            name: 'Weather ETL Pipeline.',
+            name: 'Weather ETL Pipeline',
             description: 'Implemented a daily ETL pipeline using Apache Airflow to fetch hourly temperature data from the Open-Meteo API, transform and clean the data, and store it in PostgreSQL using ON CONFLICT DO NOTHING to avoid duplication.',
             technologies: ['Python', 'Airflow','PostgreSQL '],
             images:[airflow,db]

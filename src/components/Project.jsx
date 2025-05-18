@@ -42,18 +42,18 @@ const project =[
       id: 5,
       name: 'Book shop',
       description: 'Develop a mini-project to display a book list with cover image, title, author, price, and category.',
-      technologies: ['Vue.js', 'Tailwind', 'Node.js'],
+      technologies: ['Vue.js', 'Tailwind', 'Node.js','MySQL'],
       image:book2
     },{
       id: 6,
-      name: 'Map hotspots using satellite data.',
+      name: 'Map hotspots using satellite data',
       description: 'Develop a mini-project to display hotspots by pulling data from an API and displaying it on a map.',
       technologies: ['React', 'Tailwind','MapLibre '],
       image:map
     },
     {
       id: 7,
-      name: 'Weather ETL Pipeline.',
+      name: 'Weather ETL Pipeline',
       description: 'Develop an ETL system to automatically fetch hourly weather forecast data from a public API. Cleaned and processed the data before storing it in a PostgreSQL database. The entire workflow was orchestrated and scheduled using Apache Airflow.',
       technologies: ['Python', 'Airflow','PostgreSQL '],
       image:airflow
